@@ -6,17 +6,28 @@
 
 header, .backColor {background-color: #ffffff;}
 
-/* main banner color */
+/* banner and rule colors */
 .bannerColor {background-color: #4aaaa5;}
+.mainRuleColor {background-color: #777777;}
+.headerBorderColor {background-color: #cccccc;}
+.contentBorderColor {background-color: #dddddd;}
 
 footer {background-color: #666666};
 
 /* text colors */
-header, h2 {color: #4aaaa5;}
-.bannerTextColor {color: #ffffff}
+header {color: #4aaaa5;}
+h2 {color: #4aaaa5;}
+.bannerTextColor {color: #ffffff;}
+.mainTextColor {color: #777777;}
+
+/* this is not the right color */
+footer {color: #ffffff;}
 
 /* nav menu */
 ul {list-style-type: none;}
+
+/* container ids and classes */
+#name {width: 15%; padding:10px}
 
 
 /* section colors to assist during development */
