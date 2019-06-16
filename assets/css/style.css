@@ -1,0 +1,22 @@
+/* Portfolio - main style sheet */
+
+
+
+/* main background color */
+
+header, .backColor {background-color: #ffffff;}
+
+/* main banner color */
+.bannerColor {background-color: #4aaaa5;}
+
+footer {background-color: #666666};
+
+/* text colors */
+header, h2 {color: #4aaaa5;}
+.bannerTextColor {color: #ffffff}
+
+/* nav menu */
+ul {list-style-type: none;}
+
+
+/* section colors to assist during development */
