@@ -5,8 +5,9 @@
 /* main background color */
 
 header, .backColor {background-color: #ffffff;}
-body {font-family: Arial, Helvetica, sans-serif}
-header, h2 {font-family: Georgia, 'Times New Roman', Times, serif}
+header, h2 {font-family: Georgia, 'Times New Roman', Times, serif;}
+body, a, p, nav {font-family: Arial, Helvetica, sans-serif;}
+
 
 
 /* banner and rule colors */
@@ -15,16 +16,48 @@ header, h2 {font-family: Georgia, 'Times New Roman', Times, serif}
 .headerBorderColor {background-color: #cccccc;}
 .contentBorderColor {background-color: #dddddd;}
 
+/* nav menu */
+ul {
+  float: left;
+  list-style-type: none;
+
+ }
+
+li {
+  float: left;
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
 #mainSection {
+  clear: both;
   background-color: lightskyblue;
   border-top: 2px solid #777777;
+  /* background-image: url(assets/images/paper_2.png); */
 }
 #contentBackColor {background-color: lightskyblue;}
 
+#contentRule {
+  background-color: #777777;
+  height: 2px;
+}
+
 article {
   width: 960px;
+  padding: 20px;
   background-color: bisque;
   margin: auto; 
+}
+
+#profileImg {
+  float: left;
+  padding: 20px;
 }
 
 footer {
@@ -42,20 +75,14 @@ h2 {color: #4aaaa5;}
 .bannerTextColor {color: #ffffff;}
 .mainTextColor {color: #777777;}
 
-/* nav menu */
-ul {
-  list-style-type: none;
- }
 
-li {
-  float: left;
-}
 
 
 /* container ids and classes */
 /* i don't like that i have to force font sizing manually
    to match up with the h2 About me - look for other method */
 #name {
+  float: left;
   font-size:24px;
   font-weight: 700;
   margin-left: 150px;
