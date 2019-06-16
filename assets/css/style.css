@@ -8,6 +8,10 @@ header, .backColor {background-color: #ffffff;}
 header, h2 {font-family: Georgia, 'Times New Roman', Times, serif;}
 body, a, p, nav {font-family: Arial, Helvetica, sans-serif;}
 
+body {
+  margin: 0;
+  width: 1360px;
+}
 
 
 /* banner and rule colors */
@@ -21,9 +25,28 @@ body, a, p, nav {font-family: Arial, Helvetica, sans-serif;}
   border-top: none;
 } */
 
+
+/* container ids and classes */
+/* i don't like that i have to force font sizing manually
+   to match up with the h2 About me - look for other method */
+   #name {
+    float: left;
+    font-size:24px;
+    font-weight: 700;
+    margin-left: 150px;
+    width: 20%;
+    padding:20px;
+    text-align: center;
+  }
+
 /* nav menu */
+/* Seems like there may be a better way than
+   to force the right margin to align nav with the main content
+   Maybe should try and set Nav width to 960 like main content
+   and experiment from there. */
 ul {
-  float: left;
+  float: right;
+  margin-right: 200px;
   list-style-type: none;
 
  }
@@ -42,6 +65,7 @@ a {
 
 #mainSection {
   clear: both;
+  overflow: auto;
   background-color: lightskyblue;
   border-top: 2px solid #777777;
   /* background-image: url(assets/images/paper_2.png); */
@@ -58,8 +82,8 @@ article {
   width: 960px;
   padding: 20px;
   background-color: #ffffff;
-  margin: auto; 
-  /* margin: 50px, 50px, 50px, 50px;  */
+  /* margin: auto;  */
+  margin: 50px 50px 50px 150px; 
   border: 2px solid #dddddd;
 }
 
@@ -87,22 +111,3 @@ h2 {color: #4aaaa5;}
 .bannerTextColor {color: #ffffff;}
 .mainTextColor {color: #777777;}
 
-
-
-
-/* container ids and classes */
-/* i don't like that i have to force font sizing manually
-   to match up with the h2 About me - look for other method */
-#name {
-  float: left;
-  font-size:24px;
-  font-weight: 700;
-  margin-left: 150px;
-  width: 20%;
-  padding:20px;
-  text-align: center;
-}
-
-
-
-/* section colors to assist during development */
