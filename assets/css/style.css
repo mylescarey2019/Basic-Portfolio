@@ -13,7 +13,14 @@ body {
 /* Header Outer & Inner containers */
 header {
   border-bottom: 2px solid #777777;
- }
+  /* working on fixed header but
+     currently this shifts the inner containers
+     to the left shortening the width of header
+     Need to investigate why */
+  /* position: fixed;
+  top: 0; */
+ 
+ } 
 
 #topLine {
   background-color: red;
