@@ -1,54 +1,52 @@
 /* Portfolio - main style sheet */
 
-
-
-/* main background color */
-
-header, .backColor {background-color: #ffffff;}
+/* section classes  */
+header {background-color: #ffffff;}
 header, h2 {font-family: Georgia, 'Times New Roman', Times, serif;}
 body, a, p, nav {font-family: Arial, Helvetica, sans-serif;}
 
 body {
   margin: 0;
-  width: 1360px;
+  width: 100%;
 }
-
-
-/* banner and rule colors */
-.bannerColor {background-color: #4aaaa5;}
-.mainRuleColor {background-color: #777777;}
-.headerBorderColor {background-color: #cccccc;}
-.contentBorderColor {background-color: #dddddd;}
 
 /* header {
   border-bottom: 2px solid #cccccc;
   border-top: none;
 } */
 
+/* Header Outer & Inner containers */
+#topLine {
+  background-color: red;
+  height: 70px;
+  background-color: #ffffff;
+}
 
-/* container ids and classes */
-/* i don't like that i have to force font sizing manually
-   to match up with the h2 About me - look for other method */
+#innerTopLine {
+  width: 960px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header Name Logo ids and classes */
    #name {
     float: left;
+    box-sizing: border-box;
     font-size:24px;
-    font-weight: 700;
-    margin-left: 150px;
-    width: 150px;
-    padding:20px;
+    font-weight: bold;
+    width: 200px;
+    height: 70px;
+    background-color: #4aaaa5;
+    color: #ffffff;
     text-align: center;
+    padding: 20px;
   }
 
 /* nav menu */
-/* Seems like there may be a better way than
-   to force the right margin to align nav with the main content
-   Maybe should try and set Nav width to 960 like main content
-   and experiment from there. */
 ul {
   float: right;
-  margin-right: 250px;
   list-style-type: none;
-
  }
 
 li {
@@ -66,38 +64,36 @@ a {
 #mainSection {
   clear: both;
   overflow: auto;
-  background-color: lightskyblue;
+  height: 600px;
   border-top: 2px solid #777777;
   background-image: url(../images/paper_2.png);
-  /* background-image: url(../images/stardust.png) */
-}
-#contentBackColor {background-color: lightskyblue;}
+ }
 
 #contentRule {
   background-color: #dddddd;
   height: 2px;
 }
 
-
 article {
   width: 960px;
   padding: 20px;
   background-color: #ffffff;
-  /* margin: auto;  */
-  margin: 50px 50px 50px 150px; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
   border: 3px solid #dddddd;
   box-sizing: border-box;
-
 }
 
 p {
   line-height: 1.6;
 }
+
 #profileImg {
   float: left;
-  width: 140px;
-  height: 145px;
-  padding: 5px 20px 20px 5px;
+  width: 168px;
+  height: 174px;
+  padding: 5px 20px 20px 0px;
 }
 
 footer {
@@ -113,6 +109,5 @@ footer {
 /* text colors */
 header {color: #4aaaa5;}
 h2 {color: #4aaaa5;}
-.bannerTextColor {color: #ffffff;}
 .mainTextColor {color: #777777;}
 
