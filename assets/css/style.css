@@ -97,13 +97,23 @@ p {
 
 footer {
   background-color: #666666;
+  position: relative;
   height: 40px;
   border-top: 6px solid #4aaaa5;
-  text-align: center;
   font-size: 9pt;
  /* this is not the right color */ 
   color: #cccccc;
-};
+}
+
+/* absolute position the Copyright 4px from bottom
+   center the Copyright within footer horizontally
+   using the transform */
+#copyRight {
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translate(-50%);
+  }
 
 /* text colors */
 header {color: #4aaaa5;}
