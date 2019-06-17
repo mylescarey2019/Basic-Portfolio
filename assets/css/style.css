@@ -10,12 +10,11 @@ body {
   width: 100%;
 }
 
-/* header {
-  border-bottom: 2px solid #cccccc;
-  border-top: none;
-} */
-
 /* Header Outer & Inner containers */
+header {
+  border-bottom: 2px solid #777777;
+ }
+
 #topLine {
   background-color: red;
   height: 70px;
@@ -65,7 +64,7 @@ a {
   clear: both;
   overflow: auto;
   height: 600px;
-  border-top: 2px solid #777777;
+  /* border-top: 2px solid #777777; */
   background-image: url(../images/paper_2.png);
  }
 
