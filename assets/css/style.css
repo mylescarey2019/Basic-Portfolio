@@ -13,17 +13,18 @@ body {
 /* Header Outer & Inner containers */
 header {
   border-bottom: 2px solid #777777;
+  width: 100%;
   /* working on fixed header but
-     currently this shifts the inner containers
-     to the left shortening the width of header
+     currently this stickys the header/nav bar, but
+     the mid section creeps up the height of the body
      Need to investigate why */
-  /* position: fixed;
-  top: 0; */
+  position: fixed;
+  top: 0px;
  
  } 
 
 #topLine {
-  background-color: red;
+  /* background-color: red; */
   height: 70px;
   background-color: #ffffff;
 }
@@ -73,6 +74,7 @@ a {
   height: 600px;
   /* border-top: 2px solid #777777; */
   background-image: url(../images/paper_2.png);
+  margin-top: 72px;
  }
 
 #contentRule {
