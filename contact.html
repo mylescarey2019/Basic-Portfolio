@@ -34,14 +34,26 @@
   <!-- Main Section outer container -->
   <section id="mainSection">
     <!-- Main Section inner container -->
-    <form>
+    <div class="mainDiv">
       <div id="mainSectionTitle">
         Contact
       </div>
       <!-- rule over bio text-->
       <div id="contentRule">
       </div>
-      <div>form goes here</div>
+      <form class="mainTextColor">
+        Name <br>
+        <input  type="text" name="name"  value="John Smith">
+        <br><br>
+        Email <br>
+        <input type="text" name="emailaddress"  value="example@gmail.com">
+        <br><br>
+        Message <br>
+        <textarea name="Message" placeholder="message text">type message here
+        </textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>  
       <!-- Bio article and image -->
       <!-- <div class="mainTextColor">
         <p><img id="profileImg" src="assets/images/MylesCarey.jpg" alt="Myles Carey">
@@ -59,8 +71,8 @@
           Nulla facilisi. Ut efficitur euismod orci, ut tempus dui maximus sed. Sed in velit a nibh commodo interdum. Pellentesque fringilla
           sit amet sapien sed 
         </p>
-      </div>
-    </form> -->
+      </div> -->
+    </div>
   </section>
   
   <!-- Footer with copyright -->
