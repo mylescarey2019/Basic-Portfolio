@@ -7,6 +7,7 @@ body, a, p, nav {font-family: Arial, Helvetica, sans-serif;}
 
 body {
   margin: 0;
+  padding: 0;
   width: 100%;
 }
 
@@ -14,22 +15,19 @@ body {
 header {
   border-bottom: 2px solid #777777;
   width: 100%;
-  /* working on fixed header but
-     currently this stickys the header/nav bar, but
-     the mid section creeps up the height of the body
-     Need to investigate why */
+  height: 70px;
   position: fixed;
   top: 0px;
  
  } 
 
-#topLine {
+#topDiv {
   /* background-color: red; */
   height: 70px;
   background-color: #ffffff;
 }
 
-#innerTopLine {
+#innerTopDiv {
   width: 960px;
   height: 70px;
   margin-left: auto;
@@ -40,10 +38,10 @@ header {
    #name {
     float: left;
     box-sizing: border-box;
+    height: 100%;
     font-size:24px;
     font-weight: bold;
     width: 200px;
-    height: 70px;
     background-color: #4aaaa5;
     color: #ffffff;
     text-align: center;
@@ -54,14 +52,18 @@ header {
 ul {
   float: right;
   list-style-type: none;
+  box-sizing: border-box;
+  height: 100%; 
  }
 
 li {
   float: left;
   display: block;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
+  text-align: center;
+  padding-top: 27px; 
+  padding-bottom: 27px;
+  padding-left: 30px;
+  padding-right: 0px;
 }
 
 a {
@@ -72,8 +74,8 @@ a {
   clear: both;
   overflow: auto;
   height: 600px;
-  /* border-top: 2px solid #777777; */
-  background-image: url(../images/paper_2.png);
+  /* background-image: url(../images/paper_2.png); */
+  background-image: url(../images/brickwall.png);
   margin-top: 72px;
  }
 
@@ -82,19 +84,28 @@ a {
   height: 2px;
 }
 
+#aboutMe {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #4aaaa5;
+  padding-bottom: 20px;
+}
+
 article {
   width: 960px;
   padding: 20px;
   background-color: #ffffff;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
-  border: 3px solid #dddddd;
+  margin-top: 40px;
+  border: 2px solid #dddddd;
   box-sizing: border-box;
 }
 
 p {
   line-height: 1.6;
+  padding-top: 20px;
 }
 
 #profileImg {
