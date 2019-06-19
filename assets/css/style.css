@@ -184,21 +184,24 @@ footer {
   color: #cccccc;
 }
 
-/* absolute position the Copyright 4px from bottom
+/* absolute position the Copyright 12px from bottom
    center the Copyright within footer horizontally
-   using the transform */
+   using the transform 
+   Do same for icon attribution
+*/
 #copyRight {
   position: absolute;
-  bottom: 4px;
+  bottom: 14px;
   left: 50%;
   transform: translate(-50%);
   }
 
-  #iconCredit {
-    position: absolute;
-    bottom: 4px;
-    left: 82%;
-    font-size: 8px;
+#iconCredit {
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 8px;
   }
 
 /* text colors */
