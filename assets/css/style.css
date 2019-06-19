@@ -73,6 +73,16 @@ a {
   text-decoration: none;
 }
 
+.socialNav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.socialIcon {
+  width: 30px;
+  height: 30px;
+  
+}
+
 #mainSection {
   clear: both;
   overflow: auto;
@@ -97,7 +107,7 @@ a {
 
 .mainDiv {
   width: 960px;
-  padding: 20px;
+  padding: 30px;
   background-color: #ffffff;
   margin-left: auto;
   margin-right: auto;
@@ -182,6 +192,13 @@ footer {
   bottom: 4px;
   left: 50%;
   transform: translate(-50%);
+  }
+
+  #iconCredit {
+    position: absolute;
+    bottom: 4px;
+    left: 82%;
+    font-size: 8px;
   }
 
 /* text colors */
