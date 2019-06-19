@@ -1,9 +1,9 @@
 /* Portfolio - main style sheet */
 
 /* section classes  */
-header {background-color: #ffffff;}
+header .imageText {background-color: #ffffff;}
 header, h2 {font-family: Georgia, 'Times New Roman', Times, serif;}
-body, a, p, nav, form, input, textarea {font-family: Arial, Helvetica, sans-serif;}
+body, a, p, nav, form, input, textarea, {font-family: Arial, Helvetica, sans-serif;}
 
 form, input {color: #777777;
 }
@@ -97,6 +97,12 @@ a {
   height: 2px;
 }
 
+/* #portfolioRule {
+  background-color: #dddddd;
+  height: 2px;  
+  margin-bottom: 10px;
+} */
+
 #mainSectionTitle {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 24px;
@@ -116,6 +122,15 @@ a {
   box-sizing: border-box;
 }
 
+/* struggling with trying to find right solution
+   for Portfolio container - currently hard-wiring
+   the image positions and forcing the outer container
+   height */
+#mainDivPosition {
+  position: relative;
+  height: 550px;
+}
+
 p {
   line-height: 1.6;
   padding-top: 20px;
@@ -126,6 +141,73 @@ p {
   width: 168px;
   height: 174px;
   padding: 5px 20px 20px 0px;
+}
+
+
+.box {
+  position: absolute;
+  width: 250px;
+  height: 187px;
+  background: #2db34a;
+  border: 2px solid black;
+  margin: 30px 0px 0px 30px;
+}
+
+/* .portContainer {
+  position: relative;
+} */
+
+.imageText {
+  position: relative;
+  bottom: 70px;
+  left: 30px;
+  width: 250px;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  font-size: 14pt;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+}
+
+.portImg {
+  width: 250px;
+  height: 187px;
+  border: 1px solid #dddddd;
+  margin: 30px 0px 0px 30px;
+}
+
+.box1 {
+  position: absolute;
+  left: 0px;
+}
+
+.box2 {
+  position: absolute;
+  left: 290px;
+}
+
+.box3 {
+  position: absolute;
+  left: 580px;
+}
+
+.box4 {
+  position: absolute;
+  top: 300px;
+  left: 0px;
+}
+
+.box5 {
+  position: absolute;
+  top: 300px;
+  left: 290px;
+}
+
+.box6 {
+  position: absolute;
+  top: 300px;
+  left: 580px;
 }
 
 form {
