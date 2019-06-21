@@ -6,27 +6,25 @@
 /* tag classes  */
 header .imageText {background-color: #ffffff;}
 header, h2 {font-family: Georgia, 'Times New Roman', Times, serif;}
-
-/* text colors */
-header {color: #4aaaa5;}
-h2 {color: #4aaaa5;}
+body, a, p, nav, form, input, textarea {font-family: Arial, Helvetica, sans-serif;}
+header, h2 {color: #4aaaa5;}
+nav, article, form, input {color: #777777;}
 .mainTextColor {color: #777777;}
-
-/* ToDo: error in line below - fix-refactor and test to see if any issues arise */
-body, a, p, nav, form, input, textarea, {font-family: Arial, Helvetica, sans-serif;}
-
-form, input {color: #777777;
-}
 
 body {
   margin: 0;
   padding: 0;
   width: 100%;
-}
+  background-color: #ffffff;
+  }
 
 /* Header */
 header {
   border-bottom: 2px solid #777777;
+  /* relative & z-index needed so porfolio image text goes under 
+     banner when scrolling down */
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 70px;
   position: fixed;
@@ -48,7 +46,7 @@ header {
   margin-right: auto;
 }
 
-/* Header - my name */
+/* my name - in Header */
    #name {
     float: left;
     box-sizing: border-box;
@@ -96,7 +94,6 @@ a {
 .socialIcon {
   width: 30px;
   height: 30px;
-  
 }
 
 /* main body below header */
@@ -153,14 +150,15 @@ p {
 /* about me profile image */
 #profileImg {
   float: left;
-  width: 168px;
-  height: 174px;
+  width: 200px;
+  height: 207px;
   padding: 5px 20px 20px 0px;
 }
 
 /* container for portfolio project */
 .portfolioBox {
   float: left;
+  height: 230px;
 }
 
 /* portfolio project image */
@@ -168,14 +166,16 @@ p {
   width: 250px;
   height: 187px;
   border: 1px solid #dddddd;
-  margin: 30px 0px 0px 30px;
+  margin: 30px 46px 0px 0px;
 }
 
 /* portfolio project image caption */
 .imageText {
   position: relative;
+  /* z-index needed so image banner slides under header when scroll down */
+  z-index: 0;  
   bottom: 70px;
-  left: 31px;
+  left: 1px;
   width: 250px;
   background-color: #4aaaa5;
   color: #ffffff;
@@ -246,17 +246,17 @@ input[type=submit]:hover {
 footer {
   background-color: #666666;
   position: relative;
-  height: 40px;
-  border-top: 6px solid #4aaaa5;
+  height: 52px;
+  border-top: 8px solid #4aaaa5;
   font-size: 9pt;
- /* this is not the right color */ 
   color: #cccccc;
 }
 
 
 /* copyright container */
-/* absolute position the Copyright up from bottom center the Copyright within footer horizontally
-   using the transform. Do same for icon attribution
+/* absolute position the Copyright up from bottom 
+   center the Copyright within footer horizontally using the transform.
+   Do same for icon attribution
 */
 #copyRight {
   position: absolute;
@@ -273,6 +273,3 @@ footer {
   transform: translate(-50%);
   font-size: 8px;
   }
-
-
-
