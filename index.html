@@ -10,6 +10,28 @@
 </head>
 <body>
  
+
+  <!-- Code assement:
+       Pleased with the visual appearance and the functional/chrome added to the site.
+
+       Not completly statisified with the html or css.  I think it falls short on semantics,
+       readibility and may suffer from css style bloat.  CSS could probably be shortened
+       by better selector & class groupings and relying more on inheritenance.
+       Html doesn't feels brute force in places - undoubtably there are more efficient 
+       cleaner methods for some part of the site.
+       
+       Features:
+         1) fixed Header - body scrolls underneath; fixed footer alway visable if view port is 
+            opened with enough height
+         2) active social media links with icons (email link opens/addresses email)
+         3) first portfolio image link is active and will open pre-work Band Fan Site
+         4) main body will support more content and maintain integrity of layout
+            - i initially struggle with this
+
+        Possible enhancements:
+         1) try Sticky footer
+         2) move social media links to a seperate "Connect with Me" container
+  -->
   <!-- Page Header -->
   <header>
     <!-- Outer & Inner Header Containers -->
@@ -64,57 +86,28 @@
       <!-- Bio article and image -->
       <div>
         <p><img id="profileImg" src="assets/images/MylesCarey.jpg" alt="Myles Carey">
-            sapien dictum mi, non ultrices neque nisi ac ipsum. Morbi tristique erat sapien, ac eleifend augue pretium eget. In ex nulla,
-            sollicitudin at malesuada sit amet, interdum nec risus. Proin sed dictum nunc. Maecenas neque lacus, faucibus in aliquet vel, pretium nec neque.
+          I am an IT professional who loves solving problems through programming and team collaboration.
         </p>
         <p>
-            Suspendisse lobortis tincidunt magna, non tincidunt tortor dictum eu. Proin facilisis eleifend est, ac pharetra leo sempe
+          Programming has been a part of my life since first coding on a Commadore 64 as a teen. &nbsp;Later I learned Visual Basic and coded a graphical 
+          Scrabble game to play-by-email with family and friends.</p>
+        <p>
+          I have been working with SQL, relational databases and Unix throughout my career.
+          &nbsp;Now I am excited about and embracing the challenges of learning web development.
         </p>
         <p>
-          Nulla facilisi. Ut efficitur euismod orci, ut tempus dui maximus sed. Sed in velit a nibh commodo interdum. Pellentesque fringilla
-          sit amet sapien sed 
-          Nulla facilisi. Ut efficitur euismod orci, ut tempus dui maximus sed. Sed in velit a nibh commodo interdum. Pellentesque fringilla
-          sit amet sapien sed 
-          Nulla facilisi. Ut efficitur euismod orci, ut tempus dui maximus sed. Sed in velit a nibh commodo interdum. Pellentesque fringilla
-          sit amet sapien sed 
+          In my free time, my two teenage daughters, wife and I enjoy camping on the Washington and Oregon coasts.  &nbsp;I also enjoy reading world and military history, Astronomy (both night sky and solar observing) and watching the Seahawks.
         </p>
-        <p>
-            Nulla facilisi. Ut efficitur euismod orci, ut tempus dui maximus sed. Sed in velit a nibh commodo interdum. Pellentesque fringilla
-            sit amet sapien sed 
-            Nulla facilisi. Ut efficitur euismod orci, ut tempus dui maximus sed. Sed in velit a nibh commodo interdum. Pellentesque fringilla
-            sit amet sapien sed 
-            Nulla facilisi. Ut efficitur euismod orci, ut tempus dui maximus sed. Sed in velit a nibh commodo interdum. Pellentesque fringilla
-            sit amet sapien sed 
-          </p>
-          <p>
-              Nulla facilisi. Ut efficitur euismod orci, ut tempus dui maximus sed. Sed in velit a nibh commodo interdum. Pellentesque fringilla
-              sit amet sapien sed 
-              Nulla facilisi. Ut efficitur euismod orci, ut tempus dui maximus sed. Sed in velit a nibh commodo interdum. Pellentesque fringilla
-              sit amet sapien sed 
-              Nulla facilisi. Ut efficitur euismod orci, ut tempus dui maximus sed. Sed in velit a nibh commodo interdum. Pellentesque fringilla
-              sit amet sapien sed 
-            </p>
-            <p>
-                Nulla facilisi. Ut efficitur euismod orci, ut tempus dui maximus sed. Sed in velit a nibh commodo interdum. Pellentesque fringilla
-                sit amet sapien sed 
-                Nulla facilisi. Ut efficitur euismod orci, ut tempus dui maximus sed. Sed in velit a nibh commodo interdum. Pellentesque fringilla
-                sit amet sapien sed 
-                Nulla facilisi. Ut efficitur euismod orci, ut tempus dui maximus sed. Sed in velit a nibh commodo interdum. Pellentesque fringilla
-                sit amet sapien sed 
-              </p>
-              <p>
-                  Nulla facilisi. Ut efficitur euismod orci, ut tempus dui maximus sed. Sed in velit a nibh commodo interdum. Pellentesque fringilla
-                  sit amet sapien sed 
-                  Nulla facilisi. Ut efficitur euismod orci, ut tempus dui maximus sed. Sed in velit a nibh commodo interdum. Pellentesque fringilla
-                  sit amet sapien sed 
-                  Nulla facilisi. Ut efficitur euismod orci, ut tempus dui maximus sed. Sed in velit a nibh commodo interdum. Pellentesque fringilla
-                  sit amet sapien sed 
-                </p>
       </div>
     </article>
   </section>
 
   <!-- Footer with copyright -->
+  <!-- This is a Fixed footer alway appearing in the viewport
+       if it has sufficient height
+       The page content will scroll under the Header.
+       Resize the page to a short height and scroll down to see this.
+       I will revisit to experiment with Sticky footer later-->
   <footer>
     <div id="copyRight">
       Copyright &copy;
