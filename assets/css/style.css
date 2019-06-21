@@ -1,7 +1,4 @@
 /* About me site style sheet */
-/* ToDo: should go thru whole style sheet and look for unused ids/classes */
-/* ToDo: review html pages and look for better solution on the main content container 
-         instead of using a fixed height - need to have it grow with added content. */
 
 /* tag classes  */
 header .imageText {background-color: #ffffff;}
@@ -252,7 +249,6 @@ footer {
   font-size: 9pt;
   color: #cccccc;
 }
-
 
 /* copyright container */
 /* absolute position the Copyright up from bottom 
