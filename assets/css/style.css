@@ -188,6 +188,11 @@ p {
   opacity: .5;
 }
 
+/* fade the placeholders a bit */ 
+.place-holder {
+  opacity: .5;
+}
+
 /* contact me form container */
 form {
   padding-top: 20px;
